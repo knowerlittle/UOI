@@ -26,6 +26,7 @@ gem 'devise'
 
 gem 'delayed_job_active_record'
 gem 'daemons'
+gem 'stripe'
 
 
 # Use ActiveModel has_secure_password
