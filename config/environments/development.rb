@@ -41,16 +41,15 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
   config.action_mailer.default_url_options = { host: 'http://uoi.herokuapp.com'  }
 
-  ActionMailer::Base.delivery_method = :smtp
   # SMTP settings for gmail
   ActionMailer::Base.smtp_settings = {
-    :address              => "smtp.gmail.com",
-    :port                 => 587,
-    :domain               => "gmail.com",
-    :user_name            => ENV['username'],
-    :password             => ENV['password'],
-    :authentication       => :login,
-    :enable_starttls_auto => true
+    :port                 => ENV['MAILGUN_SMTP_PORT'],
+    :address              => ENV['MAILGUN_SMTP_SERVER'],
+    :user_name            => ENV['MAILGUN_SMTP_LOGIN'],
+    :password             => ENV['MAILGUN_SMTP_PASSWORD'],
+    :domain               => "uoi.herokuapp.com",
+    :authentication       => :plain,
   }
+  ActionMailer::Base.delivery_method = :smtp
 
 end
