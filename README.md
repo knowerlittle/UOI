@@ -29,7 +29,7 @@ A Web App that creates IOUs using spam tactics as payment reminders. [View Site]
 - E-mails are sent out to get payment
 - The spamming will only stop once the recipiant clicks the link to pay amount owed
 - IOUs change colour according to their different states: Pending / Accepted / Paid
-- Emails are sent via the e-mail address `pmnbapp@gmail.com`
+- Emails are sent from the e-mail address `pmnbapp@gmail.com`
 
 Authors
 -------
