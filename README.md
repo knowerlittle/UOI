@@ -17,7 +17,7 @@ A Web App that creates IOUs using spam tactics as payment reminders. [View Site]
 4. Run `rake db:migrate` to create database tables
 5. Run `rspec` to make sure all tests are passing! 
 5. Run `rails s` to start server
-6. Open up `localhost:3000` in your web browser
+6. In a Web Browser open up `localhost:3000`
 7. Start spamming your friends with IOUs!
 
 ## How it works
