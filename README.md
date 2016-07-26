@@ -24,12 +24,12 @@ A Web App that creates IOUs using spam tactics as payment reminders. [View Site]
 - Users sign up to create and keep track of IOUs 
 - A new IOU is created by clicking on the `create IOU` Icon at the bottom right of the screen and filling in the form
 - Once the IOU is created an initial e-mail is sent to the contact provided
-- The e-mail sent out lists the name of the sender, the event, and the amount of money owed
-- Once the recipiant accepts the IOU, **the spamming happens**
-- E-mails are sent out to get payment
-- The spamming will only stop once the recipiant clicks the link to pay amount owed
+- The email sent out lists the name of the sender, the event, and the amount of money owed
+- Once the recipient accepts the IOU, **the spamming happens**
+- Emails are sent out to get payment
+- The spamming will only stop once the recipient clicks the link to pay amount owed
 - IOUs change colour according to their different states: Pending / Accepted / Paid
-- Emails are sent from the e-mail address `pmnbapp@gmail.com`
+- Emails are sent from `pmnbapp@gmail.com`
 
 Authors
 -------
