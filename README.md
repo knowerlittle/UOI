@@ -1,36 +1,43 @@
-# uoi
-An app to help make getting money from your friends easier
+UOI :moneybag:
+======
+A Web App that creates IOUs using spam tactics as payment reminders. [View Site](https://uoi.herokuapp.com/)
 
-### What it does
-Have you ever leant money to a friend, be it drinks, dinner or on holiday, and felt to awkward to ask for it back?  
-Well in that case this is the perfect app for you. At the time of lending set up an IOU and then this app will continuously spam your friend until they loosen the purse strings
+##Installation
+**Technologies used:**
+<br>
+`Ruby on Rails, Materalize CSS, PostgreSQL, Heroku`
+</br>
+**Testing Frameworks:**
+<br>
+`RSpec / Capybara`
 
-### How to use
+1. Clone this repository
+2. Run `bundle install` to install Gemfiles
+3. Run `rake db:create` to create databases
+4. Run `rake db:migrate` to create database tables
+5. Run `rspec` to make sure all tests are passing! 
+5. Run `rails s` to start server
+6. Open up `localhost:3000` in your web browser
+7. Start spamming your friends with IOUs!
 
-- Clone this directory
-- Navigate into it and then run the following commands
-```
-bundle
-rake db:create
-rake db:migrate
-rails s
-```
-- visit [local host 3000](http://localhost:3000/users/sign_in)
-- Sign up and start creating IOUs
+## How it works
+- User signs up to create and keep track of IOUs 
+- A new IOU is created by clicking on the `create IOU` Icon at the bottom right of the screen and filling in the form.
+- Once the IOU is created an initial e-mail is sent to the contact provided
+- The e-mail sent out lists the name of the person, the event, and the amount of money owed
+- Once the recipiant accepts the IOU, another e-mail is sent out to get payment
+- This is when the spamming happens and will only stop once the recipiant clicks the link to pay for the amount they owe
+- The IOUs change colour according to their different states: Pending / Accepted / Paid
 
-**Sign up or log in**
-![signup](http://i.imgur.com/FGt5pC4.png)
+Authors
+-------
+ - [Fergus Orbach](https://github.com/gerauf)
+ - [Maggie Allen](https://github.com/pixelandpage)
+ - [Lucy Clarke](https://github.com/llcclarke)
+ - [Noah Pollock](https//github.com/knowerlittle)
 
-**See who owes you money**
-![check](http://i.imgur.com/d3ufNsc.png)
+License
+-------
+:hatching_chick: Free as a bird - 2016 :hatched_chick:
 
-**Create ious**
-![create](http://i.imgur.com/ltsvacB.png)
-
-**Manage ious**
-![manage](http://i.imgur.com/ljybkdB.png)
-
-
-
-
-
+![Imgur](http://i.imgur.com/F8jt95E.jpg)
