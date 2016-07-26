@@ -31,6 +31,20 @@ A Web App that creates IOUs using spam tactics as payment reminders. [View Site]
 - IOUs change colour according to their different states: Pending / Accepted / Paid
 - Emails are sent from `pmnbapp@gmail.com`
 
+## Set delay time for spam e-mails
+The delay time is in `/app/models/iou.rb` 
+
+```
+def send_and_reschedule(mailer = IouMailer)
+    unless self.status == 'paid'
+      mailer.send_spam(self)
+      self.delay(run_at: Time.new + 60).send_and_reschedule(mailer)
+    end
+  end
+```
+
+In the example above it is set to spam every once every 60 seconds.
+
 Authors
 -------
  - [Fergus Orbach](https://github.com/gerauf)
