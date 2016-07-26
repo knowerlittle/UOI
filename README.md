@@ -43,7 +43,7 @@ def send_and_reschedule(mailer = IouMailer)
   end
 ```
 
-In the example above it is set to spam every once every 60 seconds.
+In the example above it is set to spam once every 60 seconds.
 
 Authors
 -------
