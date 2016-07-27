@@ -1,9 +1,6 @@
-<center>
 :moneybag: UOI :moneybag:
 ======
 A Web App that creates IOUs using spam tactics as payment reminders. [View Site](https://uoi.herokuapp.com/)
-
-</center>
 
 ##Installation
 **Technologies used:**
