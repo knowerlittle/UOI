@@ -45,6 +45,8 @@ def send_and_reschedule(mailer = IouMailer)
 
 In the example above it is set to spam once every 60 seconds.
 
+## Known Issues
+Stripe payment is currently in demo mode
 Authors
 -------
  - [Fergus Orbach](https://github.com/gerauf)
