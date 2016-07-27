@@ -2,15 +2,15 @@
 ======
 A Web App that creates IOUs using spam tactics as payment reminders. [View Site](https://uoi.herokuapp.com/)
 
-##Installation
 **Technologies used:**
 <br>
 `Ruby on Rails, Materalize CSS, PostgreSQL, Heroku`
-</br>
+<br>
 **Testing Frameworks:**
 <br>
 `RSpec / Capybara`
 
+##Installation
 1. Clone this repository
 2. Run `bundle install` to install Gemfiles
 3. Run `rake db:create` to create databases
