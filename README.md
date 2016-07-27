@@ -23,7 +23,7 @@ A Web App that creates IOUs using spam tactics as payment reminders. [View Site]
 ## How it works
 - Users sign up to create and keep track of IOUs 
 - A new IOU is created by clicking on the `create IOU` Icon at the bottom right of the screen and filling in the form
-- Once the IOU is created an initial e-mail is sent to the contact provided
+- Once the IOU is created an initial email is sent to the contact provided
 - The email sent out lists the name of the sender, the event, and the amount of money owed
 - Once the recipient accepts the IOU, **the spamming happens**
 - Emails are sent out to get payment
@@ -31,7 +31,7 @@ A Web App that creates IOUs using spam tactics as payment reminders. [View Site]
 - IOUs change colour according to their different states: Pending / Accepted / Paid
 - Emails are sent from `pmnbapp@gmail.com`
 
-## Set delay time for spam e-mails
+## Set delay time for spam emails
 The delay time is in `/app/models/iou.rb` 
 
 ```
